@@ -21,9 +21,16 @@ public class Main {
             threads.add(thread);
         }
 
-        for (FileReaderThread thread : threads) {
-            fos.write(thread.bytes);
-            fos.flush();
+        int check = 0;
+        while (check < 8) {
+            for (FileReaderThread thread : threads) {
+                if (thread.part == check) {
+                    fos.write(thread.bytes);
+                    fos.flush();
+                    check++;
+                }
+            }
+
         }
     }
 }
