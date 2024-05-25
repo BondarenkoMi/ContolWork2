@@ -8,7 +8,7 @@ import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        File file = new File("C:\\Users\\mihai\\IdeaProjects\\ControlWork2\\v5\\v5.png");
+        File file = new File("C:\\Users\\mihai\\IdeaProjects\\ControlWork2\\v5.png");
         FileOutputStream fos = new FileOutputStream(file);
 
         File files = new File("C:\\Users\\mihai\\IdeaProjects\\ControlWork2\\v5");
